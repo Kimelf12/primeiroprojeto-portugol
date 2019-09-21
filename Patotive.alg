@@ -1,0 +1,1868 @@
+Algoritmo "Patotive"
+// Disciplina: Linguagem e Lógica de Programação.
+// Professora: Daniela Terra.
+// Jogo: Patotive.
+// Autor : Erick Lima Figueiredo (Grupo G3).
+// Data : 09/07/2016
+// Descrição:
+// Jogo no esquema detetive
+var
+opmenuinicial: inteiro
+opconfig: inteiro
+opajuda:inteiro
+opcred:inteiro
+i:inteiro
+cidadegame:caractere
+Nomedetetive:caractere
+ajudante:Caractere
+enter:caractere
+namigo:caractere
+opcarta:inteiro
+artigo:caractere
+jogescolha:inteiro
+conquista:inteiro
+respostadia3:caractere
+descami:inteiro
+cm:inteiro
+kg:inteiro
+corcabelo:inteiro
+opcabelo:caractere
+Culpado:caractere
+Inicio
+conquista<-0
+respostadia3<-"Seu smartphone nem roda!"
+Repita
+   Escreval("                                            .....................")
+   Escreval("                                            : 1 - Jogar         :")
+   Escreval("                                            :...................:")
+   Escreval("                                            : 2 - Ajuda         :")
+   Escreval("                                            :...................:")
+   Escreval("                                            : 3 - Configurações :")
+   Escreval("                                            :...................:")
+   Escreval("                                            : 4 - Créditos      :")
+   Escreval("                                            :...................:")
+   Escreval("                                            : 5 - Sair          :")
+   Escreval("                                            :...................:")
+   Escreval("")
+   Escreva("Opção: ")
+   leia(opmenuinicial)
+   Timer(500)
+   Limpatela
+   Timer(0)
+   Escolha (opmenuinicial)
+   caso 1
+      Escreval("                              GGGGGG    LL       OOOOOO   VV      VV  EEEEEEE ")
+      Escreval("                             GGG GGGG   LL      OO    OO  VV      VV  EE      ")
+      Escreval("                            GGG    GG   LL      OO    OO   VV    VV   EE      ")
+      Escreval("                            GGG         LL      OO    OO   VV    VV   EEEEE   ")
+      Escreval("                            GGG  GGGG   LL      OO    OO    VV  VV    EE      ")
+      Escreval("                            GGG   GGG   LL      OO    OO    VV  VV    EE      ")
+      Escreval("                              GGGGGG    LLLLLL   OOOOOO       VV      EEEEEEE ")
+      Timer(1000)
+      Limpatela
+      Timer(0)
+      EScreva("                                                   APRESENTA                       ")
+      Timer(1000)
+      Limpatela
+      Timer(0)
+      Escreval("")
+      Escreval("                         :uZ8q7   :YvLv::LLY7.:LLJLJL;      ,7LJLYvLi.7LYUu2L: ")
+      Escreval("                       1@B@S50@@@B@OBMMB@O@M@B@O@B@B@B@B7 U@@B@B@MB8@B@M@@@B@B@M")
+      Escreval("                      B@i       P@M    @1    @J        7@@B:        ;@        .@BL")
+      Escreval("                     r@.    .    B@    @N    BF         .B7    .,,, XB          @B@,")
+      Escreval("                     r@.   J@@B@B@B    @q    @F   i@.    @:   k@8MOE@@    @@    O@B@8 ")
+      Escreval("                      MB.      .BB@    BG    BS   iB    2Bi   XB    i@    @B   r@B@B@B.")
+      Escreval("                      U@B@BBG    @B    @M    @F   :@. :BB@:   q@YUuLM@    B@   q@@MBB@B ")
+      Escreval("                     7@: .:ir    M@    :.    B1   ,B@B@B@@:   .7YLJrMB    @B    M@BM@B@ ")
+      Escreval("                      B@        i@BL        8@7    @B@B@B@M         :@    B@    q@MBB@: ")
+      Escreval("                       M@1:  .vB@B@B@v,  :5B@@q,::LB@@@BBB@BF;iiii:,PB;:::@B::i,MBBM@B: ")
+      Escreval("    .1@B@S,,qB@M5.    .u8ZM@@B@B@@@B@B@B@B@B@B@@@B@B@B@B@B@BBB@B@@@B@@@B@B@B@B@B@B@B@BBB@B78@BG7     :kM@BEi")
+      Escreval("  @B@jvLMB@MJ7UB@B  @B@U7ivM@B@Zrr777L0B@B@UrriO@B@0r.,ikB@BBB@Jr7LvLuO@@B@rr7v7L1@B@@@B@B27vX@BE :@@Mu7YG@BL")
+      Escreval(" @@              @B@B        @B7        r@@    SB@        G@B@B         q@B         B@@P       ,B@BX       7@@.")
+      Escreval("OB                @B         .@u         Y@,   8@          B@@@          B@          B@         .@M         vB@P")
+      Escreval("B@    B@    B@    @@   .BB    B5   LBk   :@:   MB    @B    @@@@.   @Bi   0B    @@    @B    @B    @j   7@0   ,@B@Bi")
+      Escreval("@B    @@    @B    @B   .@B    @5   J@M   i@:   M@    @@    B@@@.   B@r   E@    B@    B@   .B@    BU   1BM   .B@B@B")
+      Escreval("@@    B@    B@    B@    B@    BS   jBv   :B:   BB    @B    @B@B.   @B,   GB    @@    @B    @B    @U    @Bi:.r@BBB@.")
+      Escreval("@B    @B    @B    @B    @B    @1   5M    B@,   M@    B@    B@B@.   B:   :B@    B    LB@    B@    B@.    .F@B@BBM@B.")
+      Escreval("B@    B@    @@    B@   .B@    BF   SO    @B:   B@    @B    @B@@.   @,   i@B    @    2@B    @@    @B@B5     .B@MMB@.")
+      Escreval("@B    @B    @@    @B    r:    @5   Y@;   :@,   M@    B@    B@B@.   B@.   G@    BB    B@    B@    BZ:7vM@.   ,B@M@B.")
+      Escreval("B@    B@    B@    B@          B5   LBG   iB:   BB    @@    @B@@.   @Br   ZB    @@    @B    @B    @v   7@B   ,@BBB@.")
+      Escreval("@B    @@    @B    @@          @1   7@F   i@:   M@    B@    B@B@.   @@:   q@    B@    B@   .@@    Bj   LBM   ,B@M@B.")
+      Escreval("@@    B@    B@    B@   :B@    @5   7B5   iB:   OB          @B@B.   @i    @B    @B    @B          @X         i@BBB@.")
+      Escreval("@B    @@    @B    @O    @@    @v   :@L   ,@    F@O        q@@B@    B.   2B@    @@    B@u        @B@i       .@BBM@B.")
+      Escreval("B@:::iB@::::@@i::,B@,::7B@,::rBq,:,1Bq,:,uBv,:,8B@B2,  :j@B@M@B7::,@YiS@@@B::::@Bi:::@B@BL.  :F@B@B@M7.  i0@BBMBB@.")
+      Escreval("qB@B@B@B@B@B@B@B@B@B@B@@@@@B@B@B@B@B@B@B@@@B@B@B@B@B@B@B@B@MBM@B@@@B@B@B@B@B@B@B@B@B@B@B@B@B@B@@@M@B@B@B@B@B@MBM@B,")
+      Escreval(" :B@B@B@B@B@B@@@B@B@B@B@B@@@B@B@@@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@@@B@B@B@B@B@B@B@@@B@B@B@B@B@B@B@B@B@")
+      Escreval("   7@@@B@B@B@B@B@B@B@B@B@B@@@B@B@@@B@@@B@B@B@@@B@B@B@BFB@B@B@B@5,B@@@B@B@B@B@B@@@B@B@@@@@B@@XB@B@B@B@j .@B@B@B@B@i")
+      Escreval("     v77r7r7rrrrr7r7r7r7rrr7r7r7r7r7r7r7r7r7r7r7r7rr77  :uSPui    ivr7r7r7i.  r7rrr7r7rrr77:  iUkkY:     .75kSv,")
+      Escreval("")
+      Timer(4000)
+      Limpatela
+      Timer(0)
+      Escreval("                                                Não, não foi dessa vez...")
+      Timer(1000)
+      Limpatela
+      Timer(0)
+      Escreval(" ")
+      Escreval("                .B@B,")
+      Escreval("                S   Z")
+      Escreval("              .B    @:")
+      Escreval("      7UuL:   GN,;Lu07rr:,")
+      Escreval("     .@7 .SB71v;,:7:    :rYvi")
+      Escreval("       LM7vi::,7...        :Y1v")
+      Escreval("       ii   .::   . ...  ,:.  :S,")
+      Escreval("      Gi         .      r       ki")
+      Escreval("     :S .       ,       r        P.    .::r7YY7LL77rJ7Jvv7r:,")
+      Escreval("     P:  .      .      .,i        k:7uYvi:.              .:irYuJ7:")
+      Escreval("     J7  .      .   ...   r       :L                            :rUUv:")
+      Escreval("      M  .   . ..,.        i,      i.:,:,::::::.                    :Y1j:")
+      Escreval("      iO  ..      .         i     .7L.        .r:                      ,JFv")
+      Escreval("       :S7 .      .:.:     . : ,..i.            v                         ikJ")
+      Escreval("         iJj1r:i:ii:i.   ..  ;i :U:..:r77i.    i:                           :ku")
+      Escreval("              iZ    .  .   .r: 77  :,    :7J: ,:                              :07 ")
+      Escreval("              5:    .    :7:  L7:M7:LNE     i8u                                 LN.")
+      Escreval("              2F     :,7r:   Fv               U8                                 .E7 ")
+      Escreval("             J7,i:i:i,.    .G:  0EF1qG:        iB                                  1F")
+      Escreval("           :8,            uX   @r     Br        iN                                  7Z")
+      Escreval("          ,B           .uX:   i@    .  B         0i                                  iO ")
+      Escreval("          O.         iUU,      @   j2 Z2         .M                                   i0 ")
+      Escreval("          kr      :;r:         .07:.:5U:          @                                    YU")
+      Escreval("           @i::::@BU:  iNkFEu.   .L@GFk0          M.                                    8:")
+      Escreval("          M    .B  5 MM.       JXkU7i:           7F                                      LL")
+      Escreval("         Lv     72ii@Bj             .:J0P:       Bi                                       B")
+      Escreval("         M        i@@0     .,::i::.::.   ZM.      U0.        ,:iirr777r;i:.               ur ")
+      Escreval("        ,k     ,7vr    .i7Lr:..   r7::JU. .@, @    .BY,;Lu1uuv7::::,:,::;rJu22ur,         .0 ")
+      Escreval("        Lr   j1L,   .jr,         r.     B:  B ON     LYi.                     .rukj:       M ")
+      Escreval("        X. iN,   :YOO,:.        v     :rU  .@ @Y                                  :uNY     q.")
+      Escreval("        Z  @   v57  ,S.:r      i7,iv;i:, rq8:GM                                      rZF   Y,  ")
+      Escreval("        E  vUYJ:      k.Yi ,:::,:ir;7vUUU;. :r                         ::              v@  Li    .iY,    ")
+      Escreval("        0             78r: .::rq27:.                              .:::kGk0::            ,@ 7i.ivLr.7r ")
+      Escreval("        0           ,B,  .7L7:iUL77i.                         ijqF5r.B@  BOikqPr         7M;Li,    :r    ")
+      Escreval("        1:          .U7JLr.        :uNj.       XS2         v5kL:    0E    B   .uOu   ,iv7:         ir    ")
+      Escreval("        7L                            iNP     7B iBG:     ii      rBY     :B     Z@rv;:            :r    ")
+      Escreval("         8                              :Mu   B,   :SOqji:. .,:7FMS        @7 :77:.                ir")
+      Escreval("         Z.                               YM  B       .ivYuUFjJr,           @,,           :7ULE    ir")
+      Escreval("         iP                                .U@i                        :    F.        ,vJOi.  O,   ii ")
+      Escreval("          M.                                .B                        .O    .q    ,7uPq  B  .B7    ir ")
+      Escreval("          .O                                B      . .v                @     O:rLO5  Eu  Mu  v.8   ii ")
+      Escreval("           jj                             .Mi      ,@ 70               8 .LX0iZL  @   @  :@   :P   :r    ")
+      Escreval("            Oi                           Y8,        7@ 7B            :7@kv:   rq  OX  @r  B   B:r  ir    ")
+      Escreval("             M,                    .:iLuki           PY :B        iBXii7@    2JL   @   7  Mv  , j2 :r    ")
+      Escreval("              O:              :G:rrvri,               B   Z  :JqqOM  :  i@B   7U7  k0     N@  .iuv :;    ")
+      Escreval("               8r              M,                      M .jBZui  B   B   Gj1  Ui8  i@L    Z2FJ7.   :r    ")
+      Escreval("                SU              B.                   .7@kj  0  iB@7  XGGBM.@  :7u,  qqrvuui        jr    ")
+      Escreval("                 7G.             B    r.         :.  @.    j@  .0:@  :@Y,.GG:  k,G:rq i.       :rv7:     ")
+      Escreval("                  .qL        .,;,:O   ,qj    i:E5qB  MFE   @uu    B.  Bi  B;B .E :i.       :rL7i.        ")
+      Escreval("                    iFi   :i7i,   .M    r8FXk7@v .@    uP  @rB  r@PM  :: 7@ q1qL      .:7L7:.            ")
+      Escreval("                      ZP:i.         U7P57vBG  PN LS  ;77B  iSZ.  u q5:.rGO    ii  .i7v7:                 ")
+      Escreval("                 .ir7;.          :7,7P     B   : L@Pv. @@,  @7M   :O0rL;      kri77:.                    ")
+      Escreval("                Yv:.         :7jqi NN  Mu  XU     ZZ ivi,@  FFBSEP7.          B.                         ")
+      Escreval("                F        :i.Zr ,@  ,@  :OiXM@  .:  5@J:  BL1Oi .             5Z                          ")
+      Escreval("                u    ,v1v:,:@,  B:  B.  0MSiB:  B   Bu,i. r.                 @                           ")
+      Escreval("                2    B.  i  iB  LB  1O  JZ  7M  LB728;                      @7                           ")
+      Escreval("                U    Z.  @.  @   @   @   M  uOiu2r:.                       ZO                            ")
+      Escreval("                2    :G  SE  N0  M0  Eq   iSi 8U                          GB                             ")
+      Escreval("                u     @   B   @   Y .E.vjvi     7F7                      @E                              ")
+      Escreval("                1     jL  @v  @5:.,JX         ::irYE8J:               :S@r                               ")
+      Escreval("                u      B     L5 :i:      .:7v7:.     r5ONS7;:..,.:rjPOXi                                 ")
+      Escreval("                1      Gr,rYui       .:7Lr:.             ,rvuJ52uJvi.                                    ")
+      Escreval("                U      .ui.      .:7L7:.                                  ")
+      Escreval("                U            .i7vr:                                                     ")
+      Escreval("                u        .i7vr,     ")
+      Escreval("                2    ,rvLi,")
+      Escreval("                k:iL7r.")
+      Escreval("                :i, ")
+      Escreval("")
+      Timer(5000)
+      Limpatela
+      Timer(0)
+      Escreval("                                    Tã-Tã-Tãããããããã!")
+      Timer(3000)
+      Limpatela
+      Timer(0)
+      Escreval("Vamos começar definindo algumas coisas ?")
+      Repita
+         Escreval("Você é homem ou mulher: ")
+         Escreval(" ")
+         Escreval(" ")
+         Escreval("                  ,B@B@B@B@B@B ")
+         Escreval("                  .@@@@@B@B@B@ ")
+         Escreval("                         E@B@B ")
+         Escreval("          :7vLr:       r@@BrB@ ")
+         Escreval("      rM@@@B@@@B@BZ, .@@@u  @B ")
+         Escreval("    u@B@@@B@@@@@B@B@B@BG   .B@ ")
+         Escreval("   @@B@Bu       ,S@B@B@    :@B ")
+         Escreval("  @@B@L            NB@B@    uL ")
+         Escreval(" 8@B@:              UB@BP      ")
+         Escreval("r@B@q                @@@B      ")
+         Escreval("@B@B,                7@B@:     ")
+         Escreval("B@B@.                vB@B:     ")
+         Escreval("iB@BO                B@@@      ")
+         Escreval(" NB@@7              U@@@P      ")
+         Escreval("  @@@BS            E@B@@       ")
+         Escreval("   @B@B@F,      ,0B@B@M        ")
+         Escreval("    7B@@@B@B@B@@@B@B@i         ")
+         Escreval("       v0@B@B@B@BNr            ")
+         Escreval(" ")
+         Escreval("            1-Masculino       ")
+         Escreval("  ")
+         Escreval("                     B@.   7@r")
+         Escreval("                    5@B@i U@@@")
+         Escreval("                     0@B@@@B@:")
+         Escreval("                      v@@@B@. ")
+         Escreval("        vq@B@BBF;    q@@@B@B@i")
+         Escreval("     U@@B@B@B@B@B@BUB@B@v N@B@")
+         Escreval("   7@@@B@k7:,:vZ@B@B@BF    .J.")
+         Escreval("  Z@B@M.         iB@B@,       ")
+         Escreval(" 7@B@L             G@B@.      ")
+         Escreval(" @B@S               B@B@      ")
+         Escreval("MB@B                iB@@.     ")
+         Escreval("B@B@                .@B@,     ")
+         Escreval("U@@@,               U@@B      ")
+         Escreval(" @@@B               B@@O      ")
+         Escreval("  @B@B            :B@@@       ")
+         Escreval("  ,@B@BZ,       i@B@B@        ")
+         Escreval("    qB@@@B@OOM@B@B@@Y         ")
+         Escreval("      ,5M@B@B@B@8j            ")
+         Escreval(" ")
+         Escreval("            2-Feminino        ")
+         Escreval("  ")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate(jogescolha=1) ou (jogescolha=2)
+      Se (jogescolha=1) entao
+         artigo<-"o"
+      Senao
+         artigo<-"a"
+      Fimse
+      Timer(500)
+      Limpatela
+      Timer(0)
+      EScreva("O nome da cidade onde se passa o jogo: ")
+      Leia(cidadegame)
+      Timer(500)
+      Limpatela
+      Timer(0)
+      Escolha cidadegame
+      Caso "Gotham"
+         Escreva("Erick! Você tá jogando?")
+         Timer(900)
+         Limpatela
+         Timer(0)
+         Escreval("Muito Criativo... Ou diria previsível...")
+         Timer(900)
+         Limpatela
+         Timer(0)
+      Caso "Central City"
+         Escreva("Vinicius, Batman é melhor!")
+         Timer(900)
+         Limpatela
+         Timer(0)
+         Limpatela
+         Escreval("Muito Criativo...")
+         Timer(900)
+         Limpatela
+         Timer(0)
+      Caso "Starling City"
+         Escreva("Você falhou com essa Cidade...")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Limpatela
+         Escreval("Muito Criativo...")
+         Timer(900)
+         Limpatela
+         Timer(0)
+      Caso "Lagoa Dourada"
+         Escreva("Quero Rocambole")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Limpatela
+         Escreval("Muito Criativo...")
+         Timer(900)
+         Limpatela
+         Timer(0)
+      Caso "Gtx1080"
+         Escreva("Sai dessa vida Augusto não falo nada...")
+         Timer(900)
+         Limpatela
+         Timer(0)
+         Limpatela
+         Escreval("'-'")
+         Timer(900)
+         Limpatela
+         Timer(0)
+      Outrocaso
+         Timer(900)
+         Limpatela
+         Timer(0)
+         Escreval("Ótima escolha!")
+         Timer(900)
+         Limpatela
+         Timer(0)
+      Fimescolha
+      Escreva("Digite seu nome ou o nome de seu detetive( Pode ser um herói, que tal?): ")
+      Leia(Nomedetetive)
+      Escolha Nomedetetive
+      Caso "Batman"
+         Limpatela
+         Escreval("Erick? Ótimo nome!")
+         Timer(900)
+         Limpatela
+         Timer(0)
+         Nomedetetive<-"Erick"
+      Caso "Flash"
+         Limpatela
+         Escreva("Boa tentativa Vinicius...")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Escreva("Mas...Vai ser Erick")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Nomedetetive<-"Erick"
+      Caso "Toninho"
+         Limpatela
+         Escreva("Uau, Toninho... Você viajou demais nesse Easter Egg...")
+         respostadia3<-"E seu Windowsphone nem roda..."
+      Caso "Victor"
+         respostadia3<-"E seu Windowsphone nem roda..."
+      Fimescolha
+      Timer(1000)
+      Limpatela
+      Timer(0)
+      Escreva("Digite o nome de seu amigo: ")
+      Leia(namigo)
+      Timer(1000)
+      Limpatela
+      Timer(0)
+      Escreva("Okay ",Nomedetetive," já sei seu nome, a cidade e agora escolha o nome de seu ajudante: ")
+      Leia(ajudante)
+      Timer(500)
+      Limpatela
+      Timer(0)
+      Escreval("ótimo!")
+      Timer(1000)
+      Limpatela
+      Timer(0)
+      Escreval("O ajudante pode lhe dar algumas dicas ou pistas, mas cuidado, nem sempre estarão corretas!")
+      Timer(3000)
+      Limpatela
+      Timer(0)
+      Para i de 1 ate 4 faca
+         Escreva("Gerando história")
+         Timer(200)
+         Escreva(".")
+         Escreva(" .")
+         Escreva("  .")
+         Limpatela
+         Timer(0)
+      Fimpara
+      Timer(300)
+      Escreva("                                                 N")
+      Escreva("o")
+      Escreva("v")
+      Escreva("e")
+      Escreva("m")
+      Escreva("b")
+      Escreva("r")
+      Escreva("o")
+      Limpatela
+      Escreva("                                                 1")
+      Escreva("9")
+      Escreva("9")
+      Escreva("8")
+      Limpatela
+      Timer(0)
+      Escreval("                                                  : ")
+      Escreval("                   .                              :  ")
+      Escreval("                                                  1  ")
+      Escreval("                                                  0                                ooo       .         ")
+      Escreval("                                                  8                              ooooooo             . ")
+      Escreval("         .                             .          B                     .       ooooooooo                     ")
+      Escreval("                                                 O@1                            ooooooooo           r   ")
+      Escreval("                             @.                 0@B@v         .                  ooooooo           uB    ")
+      Escreval("                             B;  .              @G:@@                              ooo             0@      ")
+      Escreval("                             @                 71k:X5:                                             GM:     .   ")
+      Escreval("                            @B                 7YFr1u:                                            .qUY          ")
+      Escreval("                        r@k:@                  ji27J7v          .                                 :EJP         .    ")
+      Escreval("                        8BMB@                  Jru7Yv7                                      .     uFLE                 :ri:   ")
+      Escreval("      .            .   :M@B@B                  u;17uvv               r7                           @Ur@1                @B@B    . ")
+      Escreval("                     .vB@B@B,    7@SBO         Jru7L77     iU        Z@@@1             .         :@jiBG               v@M8@u    .  ")
+      Escreval("                    S@B@B@B@.    ;MLX0         ur27u7r 7uNB@B        FB@B@r .        .B@G        jML:XB           i,  7NJL5j     .   ")
+      Escreval("           .        ,B@B@B@@:    YBuZO  i      J7UvJL: M02uuu       .:177F@SS        B@O@5       iGJrkN  B@BB     J.  r8k18L        rMMP@2  ")
+      Escreval("         .M@B.       FB@MBB@     S0L1M  ;. .   uvFL2ji XJvv2j     i@v.j7riquv       :U;i72     : iM5vEN J@Z8B:    i,  GM008M        7GB5@j   ")
+      Escreval("         B@O@B        JBBB@@     28YXO  8B@B@: LJFjU2: SJ7vuU  .ZB@@i.SYJ702v 0:    .SJvU1 :@2kB.:ZFuPE LuYL5i.,. 7: iMF521Er ..... 72kL0L .......,,,.")
+      Escreval("         OL2vO    J   B@B@B@     GqUkML 7ZYjBB LuPuSF: BOGZBP .@BOZ@,.XUjY0Sr B@B@M  quj1S iBUjM:r1irUL :,;L7: 77i21,:jv77rFr..,.:,.71uLSL.::,rr,::::, ")
+      Escreval("    ,   :OU1u8i  U@N  @B@B@B  Y7XBPLFEJ rESUME LFkUFP:,M8NZ8B  82J2N.,EU2JZSr qk20M, q1uXS :MLY8:r; :   : ; :  iuiii, ::i.rZi E8ZMk 755LP7 kEX88q.,,:. ")
+      Escreval("   iEZ. vMUkUO7 v@M@u B@B@B   @@OOqUSO5 iGU2MO Lk0kqq::GUuu58  MSSkM.,E52UEPi ZXJX1F:XU1FP :MjuM:;L:rFJ ruL:F: jXJYu, Uu2LJN::0PFqX.iS1uX7.kk52SS. ... ")
+      Escreval("   q@@7 ;82F1Ei vOOM7 @BBB@ri,@qXPkJkPG rZPFOG rPE8qE.,OF25F0,,EqSNM .8Fk2GXEE@OqS1qN5F1SP1:Ou18:JYvi7J.irirP:.UkUFPv.NF115X,,2LvYu.;55Ykr LuJuujiU7.  ")
+      Escreval("  ,@ZM0 :G5SUPL@N0Z87rB@MBB@FMOqqGNGNX5 NqFPNB:7Eq1P0: OOOOM0GPNXqPEXkPPkF0EXkkSXXUXSS5kSPu7ZF2Ev1uuvjUkLLvvu11NS1UFriF1uU2q7:1uL21 ,XUukj:5UjJuu00MY  ")
+      Escreval("  FBOGBEXXOP52M@@kEEMB@BBM@BGZGqE0GZ0SFLGEBBMNOGZ0FGMMMOMXN00O@qNPNSBOkPXFEXXFMkP51XSFXSSFGGN2kOO8GZE8OOZFXS008B@OMG8O8EO88Mq.GGGM@LuZ8X8OBO8kqqZ0ZO@  ")
+      Escreval("  i@N0GOSOBBU2B@BEqOB@B@MBB@BZNEO0P8M@BOqMBM@EZ0NG8@B@B@BONPk88qPqPMM0PMGOG0k0G0kEM@MMOXNMB@G0B@M0NEPOBMESMMXZG@BMO8OOGMGOM@M1qG088MOOO@0ZEG0S1kEZZMB  ")
+      Escreval(" B@EqX@BqM@BMXMB@PEB@B@B@BMMBFEBBMO8@OOMOO@MBS080O@MMOMOOM@SXOMPqE@B@B@@@B@B0P@EMB@B@BBq@B@BBB@B@B8ZZO@@@@@@ZkEBB8GEOB@@@B@B@B@BE08MGB@B@N0MPXO00X0O@  ")
+      Escreval(" @BMBMB@N@B@B@BBBOG8PEqEP@M@BNZ@B@ZqBZXq0OBMBOB@@@E5FSFkSqBNG@B@B@BOM@MMMMMBOGBOZu5B5u0OMGEOMZBM0@BZM@0MBEu8EFXBMON8808ZEGBXXqP0BBO@8NE@qGM@@@B@BBOMB  ")
+      Escreval(" O@B@B@B0MMMOEBZ@MMMZZ8ZGGMMMMBMMMOB@B@B@MBMBPqXNPEqE0M@@B@B8G0ONOG8OZq2F5S55M@B@B@@@B@BNOGOMG@M8MBGBB8M@ZOBMMBB@BBMB0MGO8@E8GO0@MEBZBBBBMPOMSBN0B0M@  ")
+      Escreval("iki::,:i:i,,i7YqB@MMO8OM88M@B@BBB@BEBOEEO@BBMSFkkFEO0GOBMBMBM@M@M@MBOM0PPNqqk@B@ONZ@Z0O@ZMOBMMBBO@BMB@MBB8M8BOMMGBZ@E@8GGO@EEENE@BG@Z8O@ZOXMOXBEN@PBB. ")
+      Escreval("LM8NZ00E8G00ZE0ZBMMOMNGZG00ZMOO8OOMEMGGEOOMMMM@B@BBM808EGEZ0Z80GN8EOMOOGOGO88MMMOqZMGqOMMOMOMMMOMOMMMOMOMMB8M8MOMOOOOMMOMOMOMOMOMOOMOMMMMONOOPMEEMNG@B ")
+      Escreval(" ")
+      Escreval("  Em ",cidadegame," ocorreu um incidente e, a Liga dos Heróis, está ocupada com o Palhaço do Crime, então")
+      Escreval("você deverá solucionar o mistério.")
+      Escreval("  Durante a P6, o prêmio oferecido pela melhor invenção desapareceu do edifício da Mapple, o Joystick de Ouro!")
+      Escreval("")
+      Escreva("Pressione Enter:")
+      Leia(enter)
+      Limpatela
+      Escreval("                                                                                                  ")
+      Escreval("                           .,:::.                               .:::,.                            ")
+      Escreval("                      .:rr777rrrJu7.. . .           . . ..,,::72u7r;r77rr:.                       ")
+      Escreval("                  .iri:::ii:      :0uYYuuujjLvirrrivLjYjYJvr70.      .riiiiiii                    ")
+      Escreval("                vL::uu7;::.  .,  ,:          :  .:          ,:  ::   ,:ir5k::L7                   ")
+      Escreval("               ,B2,:::          .Lr         ..7@B@7:          r7           ,..:JB:                ")
+      Escreval("             .;7@                 ,.        i uBSB7 i        .                  @Lv.              ")
+      Escreval("            .J,                    .:.       0B   BP       ,.        qE@J7        .S.             ")
+      Escreval("            Y:                       .:      8     X     .,         2Z.. EY        :F             ")
+      Escreval("           iv          :uqFr           ::...  ,:,i,  ...,.          i@M 1M;         U7            ")
+      Escreval("          .j.        ,@BBENB@r                                  rL.  ,X5S,  .:,      k.           ")
+      Escreval("          7r         @2  l   7Ni         ,X@;         :GMr     7JLMY1       ZO:rP.    ru          ")
+      Escreval("         :j         .B --l--  2u         @B@B         B@@@     @7  JBi     rM7  7F     Fi         ")
+      Escreval("         J:          @B  l   F@:          11.          uP.     LO205G       MZ:iu.     .X         ")
+      Escreval("        rv            PB@B@B@:                7:. MB            ii.  rMJS,  :r:        vL         ")
+      Escreval("       .j.              .i:        . .,::     U5viB@                J@i :@:             k,        ")
+      Escreval("       7r             ..      ,,        v:.                         L8 5 Or             iu        ")
+      Escreval("      ,u                     i            .i.             rS17       rM@P:               S:       ")
+      Escreval("      Li                    ;.              7           X@8FZ@@S                         :5       ")
+      Escreval("     :L                     v                7         PB   ..:@5                         2i      ")
+      Escreval("     Li                    .7                J         B8      L@                         :2      ")
+      Escreval("     u                      k               .U         7BU    :@F                          5      ")
+      Escreval("    :;                      7L              P,          rB@B@B@U                           :i     ")
+      Escreval("   .i,                       L5            1;              ::.                              7     ")
+      Escreval("   ;:                         :Sj:     ,L7U,           ...   ...                            i     ")
+      Escreval("   Y.                           .L1XFkX1r.               ..:..                              .     ")
+      Escreval("   J                                                                                        .     ")
+      Escreval("   v                           ..,,:,:::::::::::::::::::::,:.,...                           .     ")
+      Escreval("   :                        :vuLLv777r7r7r77777r7r7r777r7r7777v7LLJ7,                       .     ")
+      Escreval("   .                      ij7:                                     :LJ:                     .     ")
+      Escreval("   i                    iYr                                          .ju.                   .      ")
+      Escreval("   J                  ,8F.                                             rBF                  .     ")
+      Escreval("   L.               :vL:                                                .rY7.               :     ")
+      Escreval("   ::,            .vL:                                                     ij7             .r     ")
+      Escreval("     L:         .;J:                                                         rUi          ,U      ")
+      Escreval("    ,77,.     rYr                                                            .vui      ,vY,       ")
+      Escreval("       ,,,..:i.                                                                 ,i:,,:::          ")
+      Escreval("")
+      Escreva("Pressione Enter:")
+      leia(enter)
+      Limpatela
+      Timer(300)
+      Escreva("                                                 D")
+      Escreva("i")
+      Escreva("a")
+      Escreva("s")
+      Escreva(" ")
+      Escreva("m")
+      Escreva("a")
+      Escreva("i")
+      Escreva("s")
+      Escreva(" ")
+      Escreva("T")
+      Escreva("a")
+      Escreva("r")
+      Escreva("d")
+      Escreva("e")
+      Timer(2000)
+      Limpatela
+      Timer(0)
+      Repita
+         Escreval("Recebi essa manhã uma carta de meu amigo,",namigo,", através do governo, uma carta aparentemente mistériosa e cheia de")
+         Escreval("problemas,a julgar pelo tamanho...")
+         Escreval("")
+         Escreval("Deseja ler a carta?")
+         Escreval("1- sim 2- Não")
+         Escreval(" ")
+         Escreva("Opção: ")
+         leia(opcarta)
+         Limpatela
+      Ate(opcarta=1) ou (opcarta=2)
+      Escolha(opcarta)
+      Caso 1
+         Escreval(" 1998, 12 de agosto, ",cidadegame,".")
+         Escreval(" ")
+         Escreval("  Car",artigo," ",Nomedetetive,",")
+         Escreval(" ")
+         Escreval(" Você foi recrutado para resolver o caso do Joystick de ouro desaparecido a dias atrás em um importante evento!")
+         Escreval("Escolhemos você por recomendações de seu amigo ",namigo,", que tem importante influência em nossas atividades. ")
+         Escreval("Você tem uma semana para resolver o caso, antes que o culpado tenha tempo de escapar do país.")
+         Escreval(" ")
+         Escreval("Ass: Bruci Uaine")
+         Escreval(" ")
+         Escreval("Ps: Você receberá uma grande recompensa pelo serviço!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Repita
+            Escreval("Deseja saber a descrição de ",namigo,"?")
+            Escreval("1-sim  2-Não")
+            Escreval(" ")
+            Escreva("Opção: ")
+            Leia(jogescolha)
+            Limpatela
+         Ate(jogescolha=1) ou (jogescolha=2)
+         Se (jogescolha=1) entao
+            Para i de 1 ate 4 faca
+               Escreva("                    B")
+               Escreva("u")
+               Escreva("s")
+               Escreva("c")
+               Escreva("a")
+               Escreva("n")
+               Escreva("d")
+               Escreva("o")
+               Escreva(".")
+               Escreva(".")
+               Escreva(".")
+               Limpatela
+            Fimpara
+            Para i de 1 ate 3 faca
+               Escreval("                          ..:::..                   ")
+               Escreval("                  :7kZBB@B@@@B@B@B@B@MEUr.          ")
+               Escreval("              ,GB@B@@@B@@@B@B@@@B@@@B@B@B@B@2       ")
+               Escreval("             k@@@B@B@B@B@B@B@B@B@B@B@B@@@B@B@Bi     ")
+               Escreval("            7@B@B@B@B@@@B@B@B@B@B@B@B@@@B@B@@@B     ")
+               Escreval("            @B@B@B@B@B@B@B@B@B@B@@@@@B@B@B@@@B@1    ")
+               Escreval("           :B@B@ZuLLuN@@B@@@@@B@@@B@BGj7rvU@B@B@    ")
+               Escreval("           u@@U..       iM@B@B@B@B2       . iO@B    ")
+               Escreval("           MB17BB@1L:  .  .@@@B@5      rvM@@krO@:   ")
+               Escreval("           B@M@B@B@B@B: ,  O@B@B, ,  u@B@B@B@B@Br   ")
+               Escreval("           @B@B@B@B@B@B@. 0@B@B@B, uB@B@B@B@B@B@Y   ")
+               Escreval("           B@B@@5i::iJ@B@. N@B@B7 @B@5r:,:vE@B@B5   ")
+               Escreval("          .@B@i         LM  B@B@@@E          U8@k   ")
+               Escreval("           B@           vO  @B@B@BS  :;ii:::,775U   ")
+               Escreval("          .@BFB@B@B@B@B@BG  B@B@B@B@@@B@@@B@B@B@G   ")
+               Escreval("           @@B@B@B@B@B@B@7  @B@B@@@B@B@B@B@B@B@B8   ")
+               Escreval("            M@B@B@B@@@B@B.  B@B@B@B@B@@@B@B@B@B@i   ")
+               Escreval("           :.M@@@B@B@B@BE   @@@B@O@B@B@@@@@B@@@r    ")
+               Escreval("           uB ,2EEuL7kU    .B@@@BY.X@BFq8@@B0:L.    ")
+               Escreval("            @L . S@8MB. MF v@B@B@B8.@B1vPj  . @     ")
+               Escreval("             @r1. O@B@B2BY @B@B@B@B@B@@@B  @.@5     ")
+               Escreval("             :@LL.  7O@B@B 7@M@7;B@@@B@r  @iS@      ")
+               Escreval("              7@J:J.         :    rr.   ,B vB       ")
+               Escreval("               L@U 1@q,     @BO       rB@ LB.       ")
+               Escreval("                L@q  @B@@@@@80P0S0ZBB@B@.NB.        ")
+               Escreval("                 v@0  qO8M@B@B@B@@@B@B@iOB          ")
+               Escreval("                  7@Y B@M8Z:    M@B@@Bi@@           ")
+               Escreval("                   r@i0B@B@@   O@B@B@7@B            ")
+               Escreval("                    :@B@B@Bi   5B@B@B@O             ")
+               Escreval("                      MB@B@  r  @@@B@u              ")
+               Escreval("                       qB@B.   i@@B@:               ")
+               Escreval("                        7@@B   B@B0                 ")
+               Escreval("                          r5   Z7                   ")
+               Escreval("                                                    ")
+               Limpatela
+            Fimpara
+            Para i de 1 ate 3 faca
+               Escreval("                      Acessado")
+               Timer(200)
+               Limpatela
+               Timer(0)
+            Fimpara
+            Escreval("                                                      ")
+            Escreval("                 X@B7                U@@J             ")
+            Escreval("               j@@B@@G    :qZ7::.   B@B@@@i           ")
+            Escreval("             .@B@B@B@B   :@@@B@B@B i@B@B@B@M          ")
+            Escreval("            7@B@B@B@B@   @B@B@@7   ;B@B@B@@@B:        ")
+            Escreval("           F@B@B@B@B@B   B@B@B@:    @B@B@MBB@Br       ")
+            Escreval("          P@B@BMB@B@B7   @B@@@B@    0@B@BBB@B@B7      ")
+            Escreval("         u@B@B@@@7@B@r  .@@B@B@B:   0B@8jB@B@B@B:     ")
+            Escreval("        :@B@@@M@B.B@B@r Y@B@B@B@M  1@@BM.@BBB@B@B     ")
+            Escreval("        @B@B@X2B@ @BBB@B@B@B@B@@@B@B@B@N B@vMB@@@B    ")
+            Escreval("       uB@B@B7J@@ B@BMB@B@B@B@B@B@@BB@BU @Bi5@B@B@:   ")
+            Escreval("       @@B@B@,uB@ kB@BMM@B@B@B@@@MMB@B@: B@:vB@@@B@   ")
+            Escreval("      i@B@v@B Y@B :@B@B@B@B@B@B@BBB@B@B :@B,i@BLB@B   ")
+            Escreval("      MB@j:B@ 7B@: @@B@B@B@B@B@B@B@B@@@ kB@.iB@ MB@Y  ")
+            Escreval("      B@B.i@B,i@BP @@@MOO@B@B@MBB@MMB@Z B@B i@@ 7@B@  ")
+            Escreval("      @@@ YB@i,B@@ 1@LBMO0OG8GO8OZMM;B: @B@ uB@..@@B  ")
+            Escreval("     :B@B Y@Bv @B@ ri BOOOOGq8MMZOM@ S .B@B P@B, @@@  ")
+            Escreval("     ;@B@ JB@X B@B   G@BBMBMBM@MBM@B2  :@BO @@@. B@B  ")
+            Escreval("     v@@@ r@B@ MB@  N@B@B@B@B@B@B@B@B7 .B@v B@B  @@@. ")
+            Escreval("     v@B@ :@@B v@B u@B@B@B@B@B@B@MBB@B: @B  @B@ ,B@B, ")
+            Escreval("     vB@B  @@@  B i@B@@MJ@@@@@@@BvB@B@B :@ .B@B i@B@. ")
+            Escreval("     r@B@, B@B  :,@B@B@U;@@B@B@B@,8B@B@B : .@@@ UB@B. ")
+            Escreval("     iB@Bi @@@  .@B@B@5 P@B@@@B@B7 BB@M@B   @@O 5@B@  ")
+            Escreval("     .@B@: B@:  @B@B@B7 @BO@@B@M@B O@B@B@@  SBj 5B@B  ")
+            Escreval("      @@B  u1  @B@@@Bi E@Ov@UGB7B@7.i@B@B@B  M: ;@@@  ")
+            Escreval("      @B@     @B@B@B@ .B@:MB,7@UrB@  B@@@@@M     B@B  ")
+            Escreval("      B@     @B@BOZBk 2@X.B@ :B@ @B, MM88@B@Z    .B@  ")
+            Escreval("      J::7ju@B@.       B J@B  @B,:@       i@@B1Y7.7r  ")
+            Escreval("       BB@BPi:,:;:       7B@  @@       .ir:,:rZ@B@X   ")
+            Escreval("         .,               @M  @U               :     ")
+            Escreval(" ")
+            Timer(2000)
+            Limpatela
+            Timer(0)
+            cm<-Randi(20)+(70)
+            kg<-Randi(20)+(70)
+            corcabelo<-Randi(4)
+            Escolha(corcabelo)
+            Caso 0
+               opcabelo<-"castanho"
+            Caso 1
+               opcabelo<-"preto"
+            Caso 2
+               opcabelo<-"Loiro"
+            Caso 3
+               opcabelo<-"Grisalho"
+            Fimescolha
+            Escreval(namigo)
+            Escreval(" ")
+            Escreval(" Cabelos ",opcabelo,"s, olhos verdes, cerca de 1,",cm," M e ",kg,"Kg. Iniciou seus trabalhos no exército aos 15 anos onde atua")
+            Escreval("até hoje, como Sargento ",namigo," do 5º batalhão de operações especiais.")
+            Escreval(" ")
+            Escreva("Pressione enter: ")
+            Leia(enter)
+            Limpatela
+         Fimse
+         Escreval("Vou chamar meu ajudante,",ajudante," e vamos ao encontro desse cara...")
+      Fimescolha
+      Timer(3000)
+      Limpatela
+      Timer(0)
+      Repita
+         Timer(200)
+         Escreva("-")
+         EScreva("D")
+         Escreva("i")
+         Escreva("a")
+         Escreva(" ")
+         Escreva("1")
+         Escreva("-")
+         Timer(0)
+         Escreval(" ")
+         Escreval(" Você chegou na cena do crime, nada aparentemente estranho exceto o zelador com cara de")
+         Escreval("quem não gostaria estar trabalhando naquele local.")
+         Escreval("O que deseja fazer agora?")
+         Escreval("1 -Procurar pistas.")
+         Escreval("2 -Interrogar os possíveis suspeitos.")
+         Escreval("3 -Comer um suculento sanduíche.")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate(jogescolha = 1) ou (jogescolha = 2) ou (jogescolha = 3)
+      Limpatela
+      Escolha (jogescolha)
+      Caso 1
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("Você investigou o local completamente e achou algumas coisas suspeitas:")
+         Escreval("O cofre para exposição estava virado de lado e possuia algumas digitais, provavelmente o responsável pelo")
+         Escreval("sumiço era uma pessoa forte.")
+         Escreval("Um fio de cabelo, da cor ",opcabelo:1," estava grudado ao vidro...")
+         Escreval("Existia algo de podre na Dinamarca.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Caso 2
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("A única pessoa presente no momento era o zelador que estava te olhando")
+         Escreval("com cara feia, então você resolveu não interroga-lo. Afinal, ele nem")
+         Escreval("estava no evento.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Isso não foi útil...")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Caso 3
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("O sanduíche-íche da lanchonete metrô, estava divino, mas continha maionese e você é alérgic",artigo," a leite...")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Não conseguia sair do banheiro!")
+         Escreval("Preste mais atenção, uma hora dessas vai parar no hospital!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("                                           :ir77r777r7777vr;:.         ")
+         Escreval("                                       ,7Lr:,              .:r7r:      ")
+         Escreval("                                     :UL.                      :i57    ")
+         Escreval("                                    uu    i1 N: q.  7q N, N.  j7  iE.  ")
+         Escreval("                                   7P     :7 k  B:  iL E  B,  v7   .M  ")
+         Escreval("                                   q:     ,BMB ;@i  :BMB ;@;  L7    Sr ")
+         Escreval("                                   :8     ,@:X @B1  :@:N @BU  vv    O: ")
+         Escreval("                                    rX.   7v ukS @  vv kX1 B  i:   1j  ")
+         Escreval("                 .,.                 .uU:  . ii  i  ,: ii  ;  :, r1i   ")
+         Escreval("              rvi:::rr7,                irr,                 .:rL:     ")
+         Escreval("             Y:       .i7;                Xi .:77r;riii;rr77ri,        ")
+         Escreval("            :r           ,7r,           rMY:Lr:   ......               ")
+         Escreval("            J,              .vPi       i0i                             ")
+         Escreval("        .i7;:  ,j::,.      7r,:                                        ")
+         Escreval("      ,v7:     Y:..::r7r:   L                                          ")
+         Escreval("    .Lr     .7r         :r; LY:                                        ")
+         Escreval("   ;v      ir              :N :7                                       ")
+         Escreval("  Li      ,7             ,:    :v.                                     ")
+         Escreval(" r:       i:              i,     r,                                    ")
+         Escreval(":v        ,:      ::::.,iiE:i;r::J.                                    ")
+         Escreval("J          L    i7,. .0.  r    :u.:                                    ")
+         Escreval(".v          v   .v     7   r      ::                                   ")
+         Escreval("r:          r.   7,      .iui::::i1i                                   ")
+         Escreval("r;        : ::    :7r:::ji         .7                                  ")
+         Escreval("i:       iu.:.          L:         i2                                  ")
+         Escreval(".i    . .7 77            :        .:,ri:                           :r7r")
+         Escreval("u  iiu.,, Pi                          ,L.                       iv:   i")
+         Escreval("L .r  iU,                              :L                    :7r,     i")
+         Escreval(";,.i .      rqB@@B     . .:,.:i,,::,,iir                  .rr:      .v.")
+         Escreval(" v :i.;   uB@B@B@BMuXBU .2L:iLL.,,:,..                  :r;.      :vi  ")
+         Escreval(" Y   .J. rB@@@B@@@B@B@B@B@ i                         :rr,    :  ii,v   ")
+         Escreval(" :r    r E@B@@@B@B@B@B@B@B r                      :;7:       .iv,  J.  ")
+         Escreval("  j    i  B@B@Nr:iB8Bq.:S7rqi::r              .:rr:             i..7r, ")
+         Escreval("  v.  :i.  iZL   .r  ..        r..:irii   .:rri.            :.   2,  j ")
+         Escreval("  i:  EM1                    :1v:i.., ,5ui;:             ::;iii7:   .7 ")
+         Escreval("  :. J.F L.                 :B:    iu::.                 ::    7i.:i7  ")
+         Escreval("  7F;     u:              .r5,i    r                           iL,.    ")
+         Escreval("  5r       Oiii,.      .:;r  v v   L                    .::.::v:       ")
+         Escreval(":ri::vi     :i  :iiirrr::.     v Y  v               .,irr:,,:,.        ")
+         Escreval(":L:     rL     1                 ii u :.          ,iiri:.              ")
+         Escreval(";7        r;    :7                 u ,r 7     .iiri:.                  ")
+         Escreval("7:          u     2                 ,7 7.,i,:i::1                      ")
+         Escreval("i:           ii    7:                 U  U ,2i  i:                     ")
+         Escreval("r             J    .Y                 7, :i  ,rri                      ")
+         Escreval(";i,.,..        5     J                 .7  1::i:.                      ")
+         Escreval("7O:..:i;i:     5     j         ::::::i  u. ir                          ")
+         Escreval(":L       .ii.  u     r:       ..         u, v                          ")
+         Escreval("r          .5iL,     :7                   L.:                          ")
+         Escreval(" ")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+      Fimescolha
+      Timer(200)
+      Escreva("-")
+      EScreva("D")
+      Escreva("i")
+      Escreva("a")
+      Escreva(" ")
+      Escreva("2")
+      Escreva("-")
+      Timer(0)
+      Escreval(" ")
+      Escreval(namigo,": Olá ",Nomedetetive," quanto tempo ?.")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Limpatela
+      Escreval(namigo,": Olá ",Nomedetetive," quanto tempo ?.")
+      Escreval("Você: Oi...")
+      Timer(200)
+      Timer(0)
+      Escreval("Você: Sim, muito tempo.")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      leia(enter)
+      Limpatela
+      Escreval(namigo,": Olá ",Nomedetetive," quanto tempo ?.")
+      Escreval("Você: Oi...")
+      Escreval("Você: Sim, muito tempo.")
+      Escreval(namigo,": Certo...Você não é de muitas palavras. Até depois então!")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Leia(enter)
+      Limpatela
+      Repita
+         Escreval(ajudante,":	O segundo dia do evento acontecerá hoje, acho melhor irmos para lá tentar achar alguns suspeitos.")
+         Escreval("Você está no maior evento de jogos do mundo o P6 .")
+         Escreval("O que deseja fazer agora?")
+         Escreval("1 -Assistir a palestra da Não intendo sobre o novo lançamento: Pakoman Vai.")
+         Escreval("2 -Mandar ",ajudante," fazer algo(vai que ele descobre algo).")
+         Escreval("3 -Interrogar.")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate(jogescolha = 1) ou (jogescolha = 2) ou (jogescolha = 3)
+      Limpatela
+      Escolha (jogescolha)
+      Caso 1
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("Você estava hipnotizado com a palestra e acabou perdendo a noção do tempo, agora só podem fazer mais uma coisa pois ")
+         Escreval("o evento irá acabar. ")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Você perdeu o dia 2...")
+         Escreval(respostadia3)
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("                                                                                ")
+         Escreval("                   rM@B@B@B@B@B@B@B@B@B@B@B@B@@@BBGkJ7:.                        ")
+         Escreval("               U@BOj7ii:::,..,ii7vL7LLYjuu2uS2F5P0OM@@@B@BMFL:                  ")
+         Escreval("             PB@r                                    ..:JZG@B@B@@O:             ")
+         Escreval("            @Br        ,rri,. . ........:,:.. .               ::7B@B@,          ")
+         Escreval("          :@B       .i::,..:ii::::,,,,.      ....,.  . . .         i@@Bi        ")
+         Escreval("         ,@B      i;. ::ir7ii,,       iP           ,::::::ii7i        NBM       ")
+         Escreval("         @B     .r. ;r:rr:             iF          .:        ,L2       LBr      ")
+         Escreval("        @B         7:,Y.                i          ji          :u       @P      ")
+         Escreval("      .@B                Y0@B@B@B@B@@L             ;                    B@      ")
+         Escreval("     G@B              :B@B@B@B@B@   J@@B:            .UO@B@B@B0,         B@U    ")
+         Escreval("   kB@B1;:.      Jq: :B@E@@@B@B@BMP:   M@@         vB@B@B@B@B@B@ :Y;:::,  i@BY  ")
+         Escreval(" ,@@5:    750kU7.     ,i;.   ,Y .7OB@BEB@P      @B@@@BBqu7i::          .:r. uBv ")
+         Escreval("7@G,i   B@@@qju@B@BJ.      iB@J      7BX          @@.              ::,  iY 7 FB ")
+         Escreval("v@1 7  ,@@.    .  ,qB@B@B@B@BF                     1B       :r   qB@@@@@@,:: ::@")
+         Escreval("@B  7  B@     @@k       ,..                        ,@B:     LB@@@BE     7. v  rB")
+         Escreval("@1  v :@.  :u@BX@@BG,              7.,O@BS           E@@Y      .    B:    ,Y :r@")
+         Escreval("@B  J  Bu MB@B@   iM@B@L,     i::::..B@,.              B@BM.       :@B   :L .r@B")
+         Escreval("U@J r. OB.    B@     .M@B@B@U:       @B  @B@B@7       M@M@Pr;v:    @B@B  ,:;.8B ")
+         Escreval("S@7 i: 1.    @B@k:    @0 :P@@@B@0r   O,         PL.kB@          r@BN0@  :. LBY  ")
+         Escreval(" U@M  :.      NB@@@BJ @B      ,LOB@B@8S7.       rOB8.       .Y@B@O7B@B:   ,BG   ")
+         Escreval("  ,@B@         vBP 7B@B@BZ        B@:u8@B@B@@BBM2jvi,LSOB@B@B@7 BZ 8B@i   B@    ")
+         Escreval("    jB@         iBB   @B@B@B@ML  r@        :@Bi;u2P@@BPU7:.B@   B@ i@Br   @B    ")
+         Escreval("     .B@          B@. F@  7@B@B@B@Bv.       BB     .B      .Bi .B@M@@@;   B@    ")
+         Escreval("       B@          0@B@7      iu@B@B@@@@@OqX@BGkNXkO@Bq0MM@@@B@B@B@B@@i   @B    ")
+         Escreval("       .B@          .@@N        S@ .LM@@@@B@B@B@B@B@B@B@@@B@B@B@B@@@B@.   B@    ")
+         Escreval("        .B@           .B@B;     @B       :@B@@@B@@@B@B@B@B@B@B@BO@@i@B    @B    ")
+         Escreval("          B@P            8B@Z  @@         r@      :@Bi::v@@, UBi @J7B:    B@    ")
+         Escreval("           r@Bu  ..   .    i@@@B@         2@      :B    rB   @j  M@Bv     @B    ")
+         Escreval("             UB@2. :::.,ii.   .LB@B@BOUr,.B@      B@   YB@ .B@O@B@0       B@    ")
+         Escreval("               J@@@i  .,,.:::.     .LX@B@B@B@B@B@B@B@B@B@@@@M1ui          MB    ")
+         Escreval("                 .E@B@i   .,.::i::                               .7       X@    ")
+         Escreval("                    .P@B@2:    .,:irr:.                       .iuL    L   jB    ")
+         Escreval("                        L@B@B1.    .:r7LLvrrii::::::::::::,::i:.    ;S7   ,@,   ")
+         Escreval("                            uB@B@r        ,::::::::.:.,....     .ijji     iBi   ")
+         Escreval("                               :0@B@0:              .........,.,,,        B@    ")
+         Escreval("                                   v@@@BOJi.                            2B@     ")
+         Escreval("                                      .jB@B@B@B@Fr.                  .X@B1      ")
+         Escreval("                                              ,rkO@B@BMPXuuYYvLvLJXM@@N.        ")
+         Escreval(" ")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+      Caso 2
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval(ajudante," acabou se distraindo ao conversar com alguns repórteres gringos que prestigiavam")
+         Escreval("o evento.")
+         Escreval("Mas descobriu algo:")
+         Escreval("O suspeito tem cabelo longo e castanho.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Escreval("Esse fato diminui as buscas em cerca de 75%.")
+         Leia(enter)
+         Limpatela
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Caso 3
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("Há cerca de 1.000.000.000 de pessoas no local. Não há como investigar todas.")
+         Escreval("Mas você tentou assim msm e perdeu seu tempo. Não descobriu nada e acabou o evento.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Que pena...")
+         Leia(enter)
+         Limpatela
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Fimescolha
+      Repita
+         Timer(200)
+         Escreva("-")
+         EScreva("D")
+         Escreva("i")
+         Escreva("a")
+         Escreva(" ")
+         Escreva("3")
+         Escreva("-")
+         Timer(0)
+         Escreval(" ")
+         Escreval("  O tempo estava passando e tínhamos apenas dado voltas em círculos, tinha de tomar uma decisão rápida eficiente e urgente.")
+         Escreval("Antes que a semana chegue ao fim...")
+         Escreval("O que deseja fazer agora?")
+         Escreval("1 -Ver a câmera e selecionar os suspeitos.")
+         Escreval("2 -Pedir ajuda a ",namigo,".")
+         Escreval("3 -Desistir do caso.")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate(jogescolha = 1) ou (jogescolha = 2) ou (jogescolha = 3)
+      Limpatela
+      Escolha (jogescolha)
+      Caso 1
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("Você viu a câmera, escolheu três suspeitos.")
+         Escreval(" ")
+         Escreval("* Ana Flávia - CEO da AE games, ela estava decepcionada pelo fato de o lançamento da Dubisoft ter feito mais sucesso que o seu,")
+         Escreval("e provavelmente receberia o game.")
+         Escreval(" ")
+         Escreval("* Shiutshu Makawa - O criador do projeto Joystick de Ouro, ele estava obcecado e queria posse de sua criação.")
+         Escreval(" ")
+         Escreval("* Bill - O zelador master, não tenho nada contra Bill, mas dizem que sempre é o mordomo. Como não há mordomo julgo ser Bill.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Repita
+            Escreval("Percebi algo de estranho nas filmagens que ",namigo," me disponibilizou.")
+            Escreval(" ")
+            Escreval("Deseja saber ?")
+            Escreval("1- Sim 2- Não")
+            Escreval(" ")
+            Escreva("Opção: ")
+            Leia(jogescolha)
+            Limpatela
+         Ate(jogescolha=1) ou (jogescolha=2)
+         Se (jogescolha=1) entao
+            Escreval(" As imagens que ",namigo," me passara, haviam alguns cortes como ",ajudante," me avisou. Achei muito estranho, mas tudo bem...")
+            Limpatela
+            Escreval("Você ganhou Uma conquista!")
+            conquista<- conquista + 1
+            Timer(1000)
+            Limpatela
+            Timer(0)
+         Fimse
+      Caso 2
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("Eu e ",ajudante," fomos atrás de ",namigo," mas eu realmente tive a impressão que ele não queria nos encontrar.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia (enter)
+         Escreval("Aparentemente ",namigo," não é meu amigo... Algo está  acontecendo...talvez ele tenha ido para o lado negro da força")
+         Escreval("ou ele sempre esteve lá.")
+         Timer(4000)
+         Limpatela
+         Timer(0)
+         Escreval(ajudante,": Ele é nosso suspeito?")
+         Timer(1000)
+         Escreval(Nomedetetive,": Ainda não sei ao certo...")
+         Escreval(Nomedetetive,": Eu estou realmente confuso!")
+         Timer(0)
+         Limpatela
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Caso 3
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval("Esse caso parece não ter solução...Eu realmente estou velh",artigo," para essas coisas...")
+         Timer(4000)
+         Limpatela
+         Timer(0)
+         Escreval("Conquistas: ",conquista)
+         Timer(4000)
+         Limpatela
+         Timer(0)
+         Escreval(" ")
+         Escreval("                .                               ......,.                                   .......,            ")
+         Escreval("         BB@B@B@BN   .B@B@B.   MB@q    5B@B B@B@B@B@B@B@       ;B@B@B@@@,  @B@.    @B@,iB@B@B@@@B@B B@B@B@B@B@.")
+         Escreval("      .2@B@         MB@u P@BM  P@B@Bi.@B@B@ @B@               @B@1    EB@N B@B     B@@.,@B@         @B@7    ZB@Z")
+         Escreval("      B@Bi   r,., .@@@     @B@ uB@B@B@B@@@B @@@2i7vu.         @@BU    k@BF @@@i.   @B@..@@B;rvLL    @@B:   .M@BO")
+         Escreval("      @B@:  rB@B@Y B@B::i,rB@B J@@@k@B0O@BB @@@M8M@Bi         @B@U    qB@S O@B@B:M@B@F :@B@EMB@M    @B@U,.2BM1BY")
+         Escreval("      qBBZ:   S@B7 @B@B@B@B@B@ uB@E LG :B@B B@B               B@BJ    5@@@  :8B@B@@Mv  7B@B         B@@@M@B@L   ")
+         Escreval("        NB@E1J@@@u B@B     B@@ N@B@    u@B@ @B@Mu1kSPPGJ      XM@B2kXU@BZr    2M@BP    u@B@U1FkSPPN @B@r U@B@BNi")
+         Escreval("         :uPqqYLY. uLJ     uLu :Yjr    :jJ7 7Yv1PENZ0Z8U        L2PENquu        u.     ,JLLPqE0Z08G ;JJ.   JLu0L")
+         Escreval(" ")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+         Escreval("Mentiraaaaaaaaaaaaaaa!")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Timer(200)
+         Escreva("HA")
+         Escreva("HA")
+         Escreva("HA")
+         Escreva("HA")
+         Escreva("HA")
+         Timer(0)
+         Limpatela
+      Fimescolha
+      Limpatela
+      Repita
+         Timer(200)
+         Escreva("-")
+         EScreva("D")
+         Escreva("i")
+         Escreva("a")
+         Escreva(" ")
+         Escreva("4")
+         Escreva("-")
+         Timer(0)
+         Escreval(" ")
+         Escreval(ajudante,": Nós temos 3 suspeitos e o tempo está realmente curto ",Nomedetetive," acho que deveriamos escolher um suspeito e seguir")
+         Escreval("em frente com apenas um suspeito! Concorda?")
+         Escreval("1- Sim 2- Não")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate(jogescolha=1) ou (jogescolha=2)
+      se (jogescolha=1) entao
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval(ajudante,": Certo!")
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Repita
+            Escreval(ajudante,": Escolha um dos suspeitos!")
+            Escreval(" ")
+            Escreval("1- Ana Flávia.")
+            Escreval(" ")
+            Escreval("2- Shiutshu Makawa.")
+            Escreval(" ")
+            Escreval("3- Bill.")
+            Escreval(" ")
+            Escreva("Opção: ")
+            Leia(jogescolha)
+            Limpatela
+         Ate (jogescolha=1) ou (jogescolha=2) ou (jogescolha=3)
+         Escreval("Você não encontrou o suspeito...")
+         Escreval(" ")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+      senao
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval(ajudante,": Então a partir de agora você trabalha sozinho!!!")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+         Escreval("Eu estava sem ",ajudante," o trabalho ficaria mais difícil...")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("???: Boa noite!")
+         Escreval(Nomedetetive,": Oi...Quem é você?")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("???: Bom, você não me conhece, meu nome é Maria Eduarda.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Maria Eduarda: Bom, você não me conhece, meu nome é Maria Eduarda.")
+         Escreval(Nomedetetive,": O que você quer?")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Maria Eduarda: Eu sou uma grande fã dos seus trabalhos ",Nomedetetive,", como ",ajudante," saiu do caso")
+         Escreval("eu irei te ajudar! Se quiser, claro...")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Repita
+            Escreval("Você quer ?")
+            Escreval(" ")
+            Escreval("1- Sim  2- Não")
+            Escreval(" ")
+            Escreva("Opção: ")
+            Leia(jogescolha)
+            Limpatela
+         Ate(jogescolha=1) ou (jogescolha=2)
+         Se (jogescolha=1) entao
+            Escreval("Ótimo! Agora vamos a feira já vai fechar, amanhã será um longo dia!!!")
+            Timer(3000)
+            Limpatela
+            Timer(0)
+         Senao
+            Escreval("Eu só quis ser educada...Eu vou de qualquer forma! Agora vamos a feira já vai fechar, amanhã será um longo dia!!!")
+            Timer(3000)
+            Limpatela
+            Timer(0)
+         Fimse
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         ajudante<-"Maria Eduarda"
+      Fimse
+      Repita
+         Timer(200)
+         Escreva("-")
+         EScreva("D")
+         Escreva("i")
+         Escreva("a")
+         Escreva(" ")
+         Escreva("5")
+         Escreva("-")
+         Timer(0)
+         Escreval(" ")
+         Escreval(" Já havia algum tempo que eu não via ",namigo,", minha sorte havia mudado, ele estava a minha frente.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval(namigo,": Olá ",Nomedetetive," eu, eu, eu fiquei sabendo que você precisava de mim!")
+         Escreval(" ")
+         Escreval("1- Sim eu preciso.")
+         Escreval("2- Não, não tenho tempo, vou interrogar meus suspeitos!")
+         Escreval("3- Você está bem,",namigo,"?")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate (jogescolha=1) ou (jogescolha=2) ou (jogescolha=3)
+      Escolha (jogescolha)
+      Caso 1
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval(Nomedetetive,": Você está fugindo de mim, o quê está acontecendo?")
+         Timer(2000)
+         Timer(0)
+         Escreval(namigo,": Na, nada amigão!")
+         Timer(2000)
+         Timer(0)
+         Escreval(Nomedetetive,": Não me venha com essa!")
+         Timer(1000)
+         Timer(0)
+         Escreval(namigo,": Esse trabalho está te enlouquecendo!")
+         Timer(1000)
+         Timer(0)
+         Escreval(Nomedetetive,": Pense o que quiser")
+         Timer(1000)
+         Timer(0)
+         Limpatela
+         Escreval(Nomedetetive,": Eu estou de olho nele, de olho!")
+         Timer(1000)
+         Escreval(ajudante,": Você percebeu que ele estava suando?")
+         Escreval(Nomedetetive,": A questão é, por quê?")
+         Timer(0)
+         Limpatela
+      Caso 2
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval(ajudante,": Eles estão aqui!")
+         Timer(3000)
+         Escreval(Nomedetetive,": Certo!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval(Nomedetetive,": Ana Flávia!")
+         Escreval("Ana Flávia: Diga!")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+         Escreval(Nomedetetive,": Vou ser clichê...")
+         Escreval("Ana Flávia: (Risos)")
+         Timer(3000)
+         Timer(0)
+         Escreval("Ana Flávia: Okay! Siga em frente!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval(Nomedetetive,": Onde você estava no dia do ocorrido?")
+         Timer(3000)
+         Escreval("Ana Flávia: Ah sim...Eu estava na sede da AE preparando as DLC's, que na verdade são o jogo em sí...")
+         Escreval(Nomedetetive,": Certo ")
+         Escreval("Ana Flávia: A propósito, toma aqui nosso novo jogo.")
+         Escreval(Nomedetetive,": Qual o jogo?")
+         Escreval("Ana Flávia: Butterfield 1.")
+         Escreval(Nomedetetive,": Uhuuuuu!")
+         Escreval(Nomedetetive,": Digo...Obrigado!")
+         Timer(0)
+         Limpatela
+         Repita
+            Escreval("Ana Flávia: Posso fazer um anúncio?")
+            Escreval(" ")
+            Escreval("1- Sim 2- Não")
+            Escreval(" ")
+            Escreva("Opção: ")
+            Leia(jogescolha)
+            Limpatela
+         Ate(jogescolha=1) ou (jogescolha=2)
+         Se (jogescolha=1) entao
+            Escreval(" ")
+            Escreval(" ")
+            Escreval("                                   .ruPO@B@BMXu;, ")
+            Escreval("                              .uB@B@B@B@B@B@B@B@@@B@u.")
+            Escreval("                           .qB@B@B@EJ:.      .iLGB@@@@@k.")
+            Escreval("                         i@@B@@P:                  :X@B@B@:")
+            Escreval("                       ,@B@BM,                        ,M@B@B:")
+            Escreval("                      0@B@Z                              8B@BE")
+            Escreval("                     B@B@.                                ,B@B@")
+            Escreval("                   .B@@8                                    G@B@.")
+            Escreval("                   @@BS                                      5@B@")
+            Escreval("                  B@BE                                        q@B@")
+            Escreval("                 S@B@              iu  iB@B@@@B@B@B@:           B@@S")
+            Escreval("                 @B@,             M@B  kB@B@B@B@B@B@i          ,B@B")
+            Escreval("                j@@B             B@B@B                          @B@Y")
+            Escreval("                B@BJ            B@B@@@B                         L@B@")
+            Escreval("                @B@:          .B@B: 0@@B   2@B@B@B@B@@@P        :B@B")
+            Escreval("                B@B.         :B@@u   PB@@   r@MBOOB@B@G@i       .@B@")
+            Escreval("                @B@:        r@@B@B@B  5B@B.        G@B1         iB@B")
+            Escreval("                O@B1       1B@BLL258L  YB@@7:iii::.rB@B@        1@@M")
+            Escreval("                7B@B      @B@B          v@@B@B@B@B@B@B@B@,      @@@r")
+            Escreval("                 @B@r    :U7r            :iiiiiiiiii:::iLr     r@@@")
+            Escreval("                 7@B@                                          B@Bv")
+            Escreval("                  B@B@                                        B@B@")
+            Escreval("                   B@B@                                      B@B@")
+            Escreval("                    B@B@                                    B@B@")
+            Escreval("                     8@B@j                                uB@BO")
+            Escreval("                      r@@@Br                            i@B@B7")
+            Escreval("                        qB@B@j                        UB@B@k")
+            Escreval("                          5@B@B@2:                ,1@@B@BF")
+            Escreval("                            iO@B@B@BBFY;i:i:rLPM@B@B@BMi")
+            Escreval("                               :U@@@@@@@B@@@B@B@B@B2,")
+            Escreval("                                    .ivukqESuvi.")
+            Escreval(" ")
+            Escreval("Ana Flávia: Okay Obrigada!")
+         Fimse
+         Timer(4000)
+         Limpatela
+         Timer(0)
+         Escreval(Nomedetetive,": Próximo!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval(Nomedetetive,:": Shiutshu Makawa...")
+         Timer(3000)
+         Escreval("Shiutshu Makawa: ...")
+         Escreval("Shiutshu Makawa: Eu não fiz nada eu julo!!!")
+         Escreval(Nomedetetive,:": Calma Makawa...")
+         Escreval(Nomedetetive,:": O que você estava fazendo no dia do desaparecimento do Joystick?")
+         Escreval("Shiutshu Makawa: (suspiros)")
+         Escreval("Shiutshu Makawa: Eu tinha saído, pala convelsa com meus pais soble nossa pastelalia")
+         Escreval("e soble o empleendimento de pastéis de flango flito e quando voltei ele sumiu!")
+         Escreval("Shiutshu Makawa: (choro)")
+         Escreval(Nomedetetive,": Tudo bem, tudo bem respira! Alguém ajuda esse sujeito!")
+         Escreval(" ")
+         Timer(0)
+         Timer(3000)
+         Limpatela
+         Timer(0)
+         Limpatela
+         Escreval(ajudante,": Finalmente, chegamos ao último suspeito!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Nomedetetive: Mande vir até aqui, por favor!")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         EScreval(Nomedetetive,": Bill, como você está?")
+         Timer(3000)
+         Escreval("Bill: Anda logo com isso, eu tenho que limpar o chão do saguão!!!")
+         Escreval(Nomedetetive,": Onde você estava no momento do ocorrido?")
+         Escreval("Bill: Eu? Bom... Eu...Eu... Eu preciso limpar o saguão")
+         Timer(0)
+         Limpatela
+         Repita
+            Escreval("Deseja ver a ficha de Bill?")
+            Escreval(" ")
+            Escreval("1- Sim 2- Não")
+            Escreval(" ")
+            Escreva("Opção: ")
+            Leia(jogescolha)
+            Limpatela
+         Ate(jogescolha=1) ou (jogescolha=2)
+         Se (jogescolha=1) entao
+            Escreval("William Henry Gates III  mais conhecido como Bill Grades")
+            Escreval(" ")
+            Escreval(" Bill tinha transtorno obscessivo compulsivo, TOC, e não suportava ver coisas sujas como janelas")
+            Escreval("seu passa tempo é lustrar seus objetos.")
+            Escreval(" ")
+            Escreva("Pressione enter: ")
+            Leia(enter)
+            Limpatela
+         Fimse
+         Escreval(ajudante,": Amanhã o dia vai ser longo!")
+         Timer(500)
+         Escreval(Nomedetetive,": com toda certeza...")
+         Timer(0)
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Caso 3
+         Para i de 1 ate 3 faca
+            Timer(200)
+            Escreva("Realizando ações")
+            Escreva(".")
+            Escreva(" .")
+            Escreva("  .")
+            limpatela
+            Timer(0)
+         Fimpara
+         Escreval(namigo,": Claro que estou bem!")
+         Timer(1000)
+         Escreval(namigo,": Aliás se lembra de quando nós eramos crianças...")
+         Timer(0)
+         Escreval("Vocês ficaram conversando o dia todo...")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Você perdeu o 5º dia...")
+         Timer(1500)
+         Limpatela
+         Timer(0)
+      Fimescolha
+      Timer(200)
+      Escreva("-")
+      EScreva("D")
+      Escreva("i")
+      Escreva("a")
+      Escreva(" ")
+      Escreva("6")
+      Escreva("-")
+      Timer(0)
+      Escreval(" ")
+      Escreval(" Plinc-plinc, plinc-plinc")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Leia(enter)
+      Limpatela
+      Escreval(Nomedetetive,": Alô?")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Leia(enter)
+      Limpatela
+      Escreval(Nomedetetive,": Alô?")
+      Escreval("???: Detetive ",Nomedetetive,"?")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Leia(enter)
+      Escreval(Nomedetetive,": Alô?")
+      Escreval("???: Detetive ",Nomedetetive,"?")
+      Escreval(Nomedetetive,": Sim, sou eu!")
+      Timer(2000)
+      Escreval("???: Aqui é Bruci Uaine!")
+      Escreval("Buci Uaine: Liguei pra avisar que seu prazo termina amanhã!")
+      Escreval(Nomedetetive,": Sim, eu estou ciente!")
+      Escreval("Bruci Uaine: Obrigado,",Nomedetetive," te vejo amanhã!")
+      Escreval(" ")
+      Para i de 1 ate 4 faca
+         Timer(500)
+         Escreval("                                                    Tu")
+         Limpatela
+      Fimpara
+      Timer(0)
+      Escreval(" Eu estava no fim desse caso...Provavelmente mais um, de meus muitos casos bem sucedidos...")
+      Escreval(" ")
+      EScreva("Pressione enter: ")
+      Leia(enter)
+      Limpatela
+      Repita
+         Escreval("Qual das decisões deseja tomar?")
+         Escreval(" ")
+         Escreval("1- Trancar todos os portões do evento até o dia seguinte.")
+         Escreval("2- ir em busca de mais algumas provas.")
+         Escreval("3- Pressionar os suspeitos")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate(jogescolha=1) ou (jogescolha=2) ou (jogescolha=3)
+      Escolha (jogescolha)
+      Caso 1
+         Escreval("Você trancou os portões ninguém sai, ninguém entra!")
+         Escreval(" ")
+         Escreval("Mas para isso teve de pedir permição as autoridades o que levou o dia inteiro...")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+      Caso 2
+         Escreval("A Waterstar estava apresentando seu novo lançamento ATG 6.")
+         Escreval(" ")
+         Escreval("Você acabou se perdendo...")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+      Caso 3
+         Escreval("Você precionou os suspeitos...")
+         Escreval(" ")
+         Escreval("Curiosidade:")
+         Escreval("Nesse momento,",namigo," se afastou. Ele estava muito nervoso.")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+      Fimescolha
+      Timer(200)
+      Escreva("-")
+      EScreva("D")
+      Escreva("i")
+      Escreva("a")
+      Escreva(" ")
+      Escreva("7")
+      Escreva("-")
+      Escreval(" ")
+      Timer(0)
+      Escreval(" Você está cercado de repórteres!")
+      Escreval(" Todos desejam saber, quem é o culpado?")
+      Escreval(" ")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Leia(enter)
+      Limpatela
+      Escreval("Você está ao vivo na Tv junto a ",ajudante,". Vamos agora diga quem é o culpado!")
+      Escreval(" ")
+      Escreva("Pressione enter: ")
+      Leia(enter)
+      Limpatela
+      Timer(3000)
+      Escreval("Digite o nome do culpado com a letra inicial maiúscula, de preferência.")
+      Timer(0)
+      Limpatela
+      Repita
+         Escreval("Deseja rever os suspeitos?")
+         Escreval(" ")
+         Escreval("1- Sim 2- Não")
+         Escreval(" ")
+         Escreva("Opção: ")
+         Leia(jogescolha)
+         Limpatela
+      Ate (jogescolha = 1) ou (jogescolha = 2)
+      Se (jogescolha = 1) entao
+         Escreval("-Ana Flávia-")
+         Escreval("-Shiutshu Makawa-")
+         Escreval("-Bill-")
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Escreval(ajudante,": Lembre-se não necessáriamente eles são os culpados!")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+      Fimse
+      Escreva("O culpado é: ")
+      Leia(culpado)
+      Limpatela
+      Para i de 1 ate 3 faca
+         Timer(200)
+         Escreva(" .")
+         Escreva("  .")
+         Escreva("   .")
+         Limpatela
+         Timer(0)
+      Fimpara
+      Se (culpado = namigo) entao
+         Timer(5000)
+         Escreval(namigo," foi capturado com sucesso, e passará 5 anos na reclusão!")
+         Timer(0)
+         Limpatela
+         Escreval("Você ganhou Uma conquista!")
+         conquista<- conquista + 1
+         Timer(1000)
+         Limpatela
+         Timer(0)
+         Timer(7000)
+         Escreval("A P6 foi salva e o Joystick de Ouro foi entregue a Waterstar!!!")
+         Escreval("Você ganhou o título de maior detetive de",cidadegame,"!")
+         Timer(0)
+         Limpatela
+         Escreval("      ")
+         Escreval("   ")
+         Escreval("  OB@     @B. .@@B@B@@@@M  M@M    ,B@   ")
+         Escreval("  Z@M     @@   @Bq1PS2B@G  MBM     @B   ")
+         Escreval("  OBB     @B. .B@     ZBM  M@M    ,B@   ")
+         Escreval("  M@B     @@.  @B     M@M  MBM    ,@B   ")
+         Escreval("  @B@B@B@B@B: .B@     MBM  M@O    ,B@   ")
+         Escreval("   .  B@X  .  .@@     G@M  BBZ     @@   ")
+         Escreval("      @BF     :B@B@B@M@@@  @@BBB@B@B@.  ")
+         Escreval("      UX:      kUPEGE0257  v15NZZGX1k   ")
+         Escreval("                                        ")
+         Escreval("                                        ")
+         Escreval("     :@B@@@@@@@B@@@B@B@B@@@B@B@B@B      ")
+         Escreval("   . JB@B@B@B@B@B@B@B@B@B@B@B@@@B@i..   ")
+         Escreval("   B@M                            @@@   ")
+         Escreval("0GZi:   vOu                  M@L  .:iMM.")
+         Escreval("@@@     @B@ .              ..@@E .   B@:")
+         Escreval("@@B  uB@@@B@BF            B@B  :@@:  @B.")
+         Escreval("@B@   i,@B@.i   BB@B@B@Z  .iiOMS:i   @@,")
+         Escreval("B@@.    F@N    .@@B@B@B@ .   @@F    .@B,")
+         Escreval("   B@O       G@B        @@v       @B@   ")
+         Escreval("   ;iUBBMMOBB2ir        riS@MM8MM@v;:   ")
+         Escreval("     i@B@B@B@i            5@@@@B@B      ")
+         Escreval("                                        ")
+         Escreval("                                        ")
+         Escreval("YkX       iZS  JBMSSE@M  rPPOMMMGXN,  Nk")
+         Escreval("@B@  .L7  P@@  L@M@B@MM  Z@@GMB8MB@7  @B")
+         Escreval("O@B  q@@  J@B     B@:    FB@     @Bi  B@")
+         Escreval("OB@  Y@B  JB@     @Br    2@@     B@:  @B")
+         Escreval("8@B  L@@  v@B     B@i    5@@     @Bi  @@")
+         Escreval("OB@  ;@B  rB@     @B:    2@B     B@:    ")
+         Escreval("G@BZ0@B@0EB@B  L@MB@BBM  jB@     @@:  MO")
+         Escreval(" ")
+         Escreval(" ")
+         Escreval("Conquistas: ",conquista)
+         Escreval(" ")
+         Escreva("Pressione enter: ")
+         Leia(enter)
+         Limpatela
+         Timer(3000)
+         Limpatela
+         Escreval("Desenvolvedor: Meu Deus, eu não imaginaria que você iria conseguir ",Nomedetetive,"...")
+         Timer(0)
+         Limpatela
+      Senao
+         Escreval(" ")
+         Escreval("                .                               ......,.                                   .......,            ")
+         Escreval("         BB@B@B@BN   .B@B@B.   MB@q    5B@B B@B@B@B@B@B@       ;B@B@B@@@,  @B@.    @B@,iB@B@B@@@B@B B@B@B@B@B@.")
+         Escreval("      .2@B@         MB@u P@BM  P@B@Bi.@B@B@ @B@               @B@1    EB@N B@B     B@@.,@B@         @B@7    ZB@Z")
+         Escreval("      B@Bi   r,., .@@@     @B@ uB@B@B@B@@@B @@@2i7vu.         @@BU    k@BF @@@i.   @B@..@@B;rvLL    @@B:   .M@BO")
+         Escreval("      @B@:  rB@B@Y B@B::i,rB@B J@@@k@B0O@BB @@@M8M@Bi         @B@U    qB@S O@B@B:M@B@F :@B@EMB@M    @B@U,.2BM1BY")
+         Escreval("      qBBZ:   S@B7 @B@B@B@B@B@ uB@E LG :B@B B@B               B@BJ    5@@@  :8B@B@@Mv  7B@B         B@@@M@B@L   ")
+         Escreval("        NB@E1J@@@u B@B     B@@ N@B@    u@B@ @B@Mu1kSPPGJ      XM@B2kXU@BZr    2M@BP    u@B@U1FkSPPN @B@r U@B@BNi")
+         Escreval("         :uPqqYLY. uLJ     uLu :Yjr    :jJ7 7Yv1PENZ0Z8U        L2PENquu        u.     ,JLLPqE0Z08G ;JJ.   JLu0L")
+         Escreval(" ")
+         Timer(5000)
+         Limpatela
+         Timer(0)
+         Escreval(namigo," fugiu com com o Joystick de Ouro")
+         Timer(3000)
+         Limpatela
+         Timer(0)
+         Escreval("Conquistas: ",conquista)
+         Timer(3000)
+         Limpatela
+         Escreval("Tente Mais Tarde...")
+         Timer(0)
+         Limpatela
+      Fimse
+   Caso 2
+      Repita
+         Escreval("Ajuda:")
+         Escreval("")
+         Escreval("  O jogo é de estilo detetive, para prosseguir no jogo é necessário")
+         Escreval("apenas que se escolha uma opção, a partir daí o enredo do jogo se ")
+         Escreval("desenvolve. Siga as pistas, interrogue os suspeitos...Quem é o culpado?")
+         Escreval("")
+         Escreva("Pressione 1 seguido de enter para voltar ao menu:")
+         leia(opajuda)
+         Limpatela
+      Ate(opajuda=1)
+   caso 3
+      Repita
+         Escreval("OPÇÕES: ")
+         Escreval(" ")
+         Escreval(".....................")
+         Escreval(": 1 - Gráficos      :")
+         Escreval(":...................:")
+         Escreval(": 2 - Som           :")
+         Escreval(":...................:")
+         Escreval(": 3 - Legenda       :")
+         Escreval(":...................:")
+         Escreval(": 4 - Voltar        :")
+         Escreval(":...................:")
+         Escreval(" ")
+         Escreva("Insira a opção: ")
+         leia(opconfig)
+         Limpatela
+         Escolha (opconfig)
+         Caso 1
+            Escreval("A plataforma não suporta a função...")
+            Timer(2000)
+            Limpatela
+            Timer(0)
+         Caso 2
+            Escreval("Open your mind!")
+            Timer(2000)
+            Limpatela
+            Timer(0)
+         Caso 3
+            Escreval("O jogo já é em texto, não?")
+            Timer(2000)
+            Limpatela
+            Timer(0)
+         Caso 4
+            Timer(2000)
+            Limpatela
+            Timer(0)
+         Fimescolha
+      Ate (opconfig=4)
+   caso 4
+      Repita
+         Escreval("Criação: Erick Lima Figueiredo")
+         Escreval("Professor: Daniela Terra")
+         Escreval("Instituto Federal de Minas Gerais")
+         Escreval(" ")
+         Escreval("")
+         Escreval("    :5MOII                            ")
+         Escreval("  ,ZBM8OOBE:  uuLYLYLYY1i :FYLvYLYLu2 ")
+         Escreval(" E@B@MMOMB@BF N1F252525PP 1N52121215Oi")
+         Escreval("i@BMOMOMOMM@BSLUjujujuuSu LXuuJujuJ20i")
+         Escreval("uBBOM8M8OOMM@OLJuJuJuju5U YSujujuYuuZ:")
+         Escreval(" @BBOMOMOMM@BrUUuUuUuuuk5 jPuuuUuUu2Ei")
+         Escreval(" .@B@MBM@B@B. 8PXkXSXSPG1 uMG0ZEZEGZB:")
+         Escreval("   :FMB@OPi    .       .   ,,,.,.,.:. ")
+         Escreval(" ijir7jL7ir7  LL777777vJi")
+         Escreval(" 0qFuuLYY25M..OX151S5FF00")
+         Escreval(" 5kjuYuJjJ2N  EuuJuuujuFS")
+         Escreval(" 5FuJuJjJuuN  q2JuJuJujS5")
+         Escreval(" FXuuuuuujUE. ZUUjujujUSk")
+         Escreval(" EGPXXkXkPP@ .MNXXSXSXXO0")
+         Escreval("  ::,,:,:,:.  ,::,:,:,::")
+         Escreval("  ::::,:::::  ,i:::::::i  .L77777v7Lr")
+         Escreval(" NOkXkXkXS0M. BPPkPkPSqZP 5ONPNPqXNq@i")
+         Escreval(" kSUjuuUjuuZ  02jUjujuuSU YkjujuJuj2Ei")
+         Escreval(" 5SjuJjJjYUq  0uuJujuju5U YFuJujuJuuE:")
+         Escreval(" SSUjujuJuuE  N2JujujujSu LkuujuJujU0i")
+         Escreval(" qGFF1S5F5XM. MkS1S1S1SNP 5EXFkFSFkSBi")
+         Escreval(" :L7r7r7r777  7vr7r7r7rL: :X51u1U12F1.")
+         Escreval("  .       .    ..     ..  ")
+         Escreval(" XGqkPXPkPPM  MEkPSPkXkOF ")
+         Escreval(" SXuUuUjUj10. ZuUuUuUuUSP ")
+         Escreval(" FFuYujuJuu0  q2JuJuJuJSF ")
+         Escreval(" 1kjuJujuuUq  EuuJuJuJuSS ")
+         Escreval(" qX2U2U1U11O..OFU2u1U2UXP ")
+         Escreval(" :Jrrr7rrrvv  L77r7rrr7Li ")
+         Escreval("")
+         Escreval("")
+         Escreva("Pressione 1 seguido de enter para sair: ")
+         leia(opcred)
+         Limpatela
+      Ate(opcred=1)
+   caso 5
+      Para i de 1 ate 4 faca
+         Escreva ("Finalizando")
+         Timer(200)
+         Escreva (".")
+         EScreva (" .")
+         Escreva ("  .")
+         Limpatela
+         Timer(0)
+      Fimpara
+   Caso 42
+      Escreval("Você zerou!")
+      Escreval("PS: E obviamente leu um bom livro...")
+      Escreval("")
+      Escreval("        Douglas Adams")
+      Escreval("Nasceu:1952       Faleceu:2001")
+      Timer(4000)
+      Limpatela
+      Timer(0)
+   Caso 28064212
+      Escreva("Você zerou!")
+      Escreval(" ")
+      Escreval("                                                             7BX                                 ")
+      Escreval("                                                            r  B,                           ::   ")
+      Escreval("                                                            B    .                    .i   ,G@B: ")
+      Escreval("                                                            @X   Zq                 .B0,  @Bj7@q ")
+      Escreval("                                                             @E   B@               .Bu   @u      ")
+      Escreval("                                                              @0   k@              :@            ")
+      Escreval("                                                               :    G@             2B            ")
+      Escreval("                                                                    SB           ,@O             ")
+      Escreval("                                                                :   Br           @: :@           ")
+      Escreval("                                                                Mi  @,           i  @O           ")
+      Escreval("                                                                 @B :@              B@           ")
+      Escreval("                                                                  LBLBO            L@5           ")
+      Escreval("                                                                   .@@Br.@B@@@B G@B@.            ")
+      Escreval("                                                                    @B@: B@B@BX B@@8             ")
+      Escreval("                                                                  jv EB@i  vi  F@@: O.           ")
+      Escreval("                                                                 k@ :@@B@@O :@@B@B@ LB,          ")
+      Escreval("                                                                i@B :@B@B@B@B@B@B@B  @B          ")
+      Escreval("                                                                @B@  B@B@@@B@B@B@B@ iB@v         ")
+      Escreval("                                                                B@u B@@@B@B@B@B@B@B5 @BL         ")
+      Escreval("                                                                iB@ 72Yj:r@B@G:iUL5  B@          ")
+      Escreval("                                                                 P2 r   B.:@@ k   i: @.          ")
+      Escreval("                                                                    F2L:rY.B@ 0,ruPu             ")
+      Escreval("                                                                 M 0B@B@P  Y;  @B@@@ 7L          ")
+      Escreval("                                                                rB@ LFEM@j.B@ @BM0F::B@          ")
+      Escreval("                                                                 NB@EXkL   qF  :1XkBB@7          ")
+      Escreval("                                                                      .vjY,  :ULr                ")
+      Escreval("                                                                     : Z@@B@B@B@.,               ")
+      Escreval("                                                                     .E:EB@B@B@Lr5               ")
+      Escreval("                                                                       Br7LLj;7uZ                ")
+      Escreval("                                                                        0j@v@Bqi                 ")
+      Escreval("                                                                          i .,                   ")
+      Escreval("                                                                                                 ")
+      Escreval("Entendeu o filme?")
+      Timer(4000)
+      Limpatela
+      Timer(0)
+   Caso 108022001
+      Timer(3000)
+      Escreval("                                                                       Que pena...")
+      Timer(0)
+      Limpatela
+   Fimescolha
+Ate(opmenuinicial=5) ou (opmenuinicial=42) ou (opmenuinicial=28064212) ou (opmenuinicial=108022001)
+Para i de 1 ate 5 faca
+   Escreval("   ")
+   Escreval("   ")
+   Escreval("   ")
+   Escreval("                                                                         :FOk MXL.")
+   Escreval("                                                                      iXB@B@k BOOBEL.")
+   Escreval("                                                                   iXB@MGq0MU OSkkEOBEL.")
+   Escreval("                                                                ik@@M8qqXqXMu GS5F1kkEOB0L.")
+   Escreval("                                                             :XB@M8q0XqXqkNO2 8FF5F1FFkkEOBqv.")
+   Escreval("                                                            kB@M8N0NZZO8OZE0BU 8PFXP0qNXkFkkEOBZ7")
+   Escreval("                                                          :@B8q0PEOMOGPP51FF0u ZFk1uu1SqEEkSFkkZBG")
+   Escreval("                                                          @M0XPPZBE;:   vXSL1r jvJ57. .,rUBES5F5PMS")
+   Escreval("                                                         iBEXPPZBv       .8@BO @B@r   .i  .kZS5FFZ8")
+   Escreval("                                                         :@PPXN@J  Lii;Y   ,:  :i     vU    MX215PG")
+   Escreval("                                                         :B0XNOM  q,7@r,5  vG  iM   B1  :@. 7@5uUNZ")
+   Escreval("                                                         :@NqN@:  :u;Li7.             vJ     B@SUkG")
+   Escreval("                                                         :BNPBq     :,.;7 u:    iLiir:;L     rBME0q")
+   Escreval("                                                         :@qZB.        7, :v.  .N @B 0        MBM@O")
+   Escreval("                                                         :BZMq         ku 1S    U;vLiS        ,@8@B")
+   Escreval("                                                         :@0@,                                 BBB@")
+   Escreval("                                                         iBGB          .   ... ,               MB@M")
+   Escreval("                                                         i@E@.       :@B@B@B@M,B@@@@@Bv        G@@@")
+   Escreval("                                                         .BMME     .O@BBMMOM@X @OM8MOBBB:      @M@Z")
+   Escreval("                                                          rB@@8.  NB@MO88GO8@5 @OEZEGEOB@q   :@B@B")
+   Escreval("                                                           ,Z@B@B@B@MMGOGOGOBF @ZGEG0Z08O@BBB@@@F")
+   Escreval("                                                              7G@BMEOOMO8ZOG@1 B8EZ0GEGGMM@B@Ni")
+   Escreval("                                                                 rN@BO8MMMGOB1 @EG0ZZOM@B@Xi")
+   Escreval("                                                                    rq@BMOMM@2.BOGOM@B@F:")
+   Escreval("                                                                       7q@B@B0.@B@@@ki")
+   Escreval("                                                                          rF@S:B@F: ")
+   Escreval(" ")
+   Escreval(" ")
+   Escreval("                                                                   Obrigado por jogar!")
+   Limpatela
+Fimpara
+Timer(5000)
+Escreval("                                                                   Obrigado por jogar!")
+Timer(0)
+Limpatela
+Fimalgoritmo
